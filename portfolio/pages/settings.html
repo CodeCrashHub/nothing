@@ -1,0 +1,156 @@
+<div class="p-8 max-w-4xl mx-auto">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-white mb-4">Settings</h1>
+        <div class="h-1 w-20 bg-red-500 mb-6"></div>
+        <p class="text-gray-300">
+            Customize your portfolio experience and preferences.
+        </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Settings Navigation -->
+        <div class="md:col-span-1">
+            <div class="bg-discord-darker rounded-lg p-4 shadow-lg">
+                <nav class="space-y-1">
+                    <a href="#account" class="block px-3 py-2 rounded-md bg-discord-dark text-white font-medium">
+                        <i class="fas fa-user-circle mr-2"></i>Account
+                    </a>
+                    <a href="#appearance" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-discord-dark hover:text-white transition duration-200">
+                        <i class="fas fa-paint-brush mr-2"></i>Appearance
+                    </a>
+                    <a href="#notifications" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-discord-dark hover:text-white transition duration-200">
+                        <i class="fas fa-bell mr-2"></i>Notifications
+                    </a>
+                    <a href="#privacy" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-discord-dark hover:text-white transition duration-200">
+                        <i class="fas fa-shield-alt mr-2"></i>Privacy
+                    </a>
+                    <a href="#language" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-discord-dark hover:text-white transition duration-200">
+                        <i class="fas fa-globe mr-2"></i>Language
+                    </a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Settings Content -->
+        <div class="md:col-span-3">
+            <!-- Account Settings -->
+            <div id="account" class="bg-discord-darker rounded-lg p-6 shadow-lg mb-6">
+                <h2 class="text-2xl font-bold mb-6 text-white">Account Settings</h2>
+                
+                <div class="flex items-center mb-6">
+                    <div class="w-20 h-20 rounded-full bg-blue-500 flex items-center justify-center mr-4 flex-shrink-0">
+                        <span class="text-2xl text-white">P</span>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-medium text-lg">Portfolio User</h3>
+                        <p class="text-gray-400">john@example.com</p>
+                        <button class="mt-2 px-3 py-1 bg-discord-primary text-white text-sm rounded-md hover:bg-blue-600 transition duration-200">
+                            Change Avatar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-300 mb-1">Username</label>
+                        <input type="text" id="username" value="PortfolioUser" class="w-full bg-discord-dark border-none rounded-md p-2.5 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                        <input type="email" id="email" value="john@example.com" class="w-full bg-discord-dark border-none rounded-md p-2.5 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                        <input type="password" id="password" value="********" class="w-full bg-discord-dark border-none rounded-md p-2.5 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button class="px-4 py-2 bg-discord-primary text-white rounded-md hover:bg-blue-600 transition duration-200">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Appearance Settings -->
+            <div id="appearance" class="bg-discord-darker rounded-lg p-6 shadow-lg mb-6">
+                <h2 class="text-2xl font-bold mb-6 text-white">Appearance</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-medium text-white mb-3">Theme</h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-discord-dark p-4 rounded-lg border-2 border-blue-500 cursor-pointer">
+                                <div class="h-20 bg-discord-darkest rounded-md mb-2"></div>
+                                <div class="text-center text-white">Dark</div>
+                            </div>
+                            <div class="bg-gray-200 p-4 rounded-lg border-2 border-transparent cursor-pointer">
+                                <div class="h-20 bg-white rounded-md mb-2"></div>
+                                <div class="text-center text-gray-800">Light</div>
+                            </div>
+                            <div class="bg-indigo-900 p-4 rounded-lg border-2 border-transparent cursor-pointer">
+                                <div class="h-20 bg-indigo-800 rounded-md mb-2"></div>
+                                <div class="text-center text-white">Midnight</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-medium text-white mb-3">Accent Color</h3>
+                        <div class="flex space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-500 cursor-pointer border-2 border-white"></div>
+                            <div class="w-10 h-10 rounded-full bg-purple-500 cursor-pointer"></div>
+                            <div class="w-10 h-10 rounded-full bg-green-500 cursor-pointer"></div>
+                            <div class="w-10 h-10 rounded-full bg-yellow-500 cursor-pointer"></div>
+                            <div class="w-10 h-10 rounded-full bg-red-500 cursor-pointer"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-medium text-white mb-3">Font Size</h3>
+                        <div class="flex items-center">
+                            <span class="text-gray-400 mr-3">A</span>
+                            <input type="range" min="12" max="20" value="16" class="w-full h-2 bg-discord-dark rounded-lg appearance-none cursor-pointer">
+                            <span class="text-gray-400 ml-3 text-lg">A</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button class="px-4 py-2 bg-discord-primary text-white rounded-md hover:bg-blue-600 transition duration-200">
+                            Apply Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Settings navigation
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all links
+            document.querySelectorAll('nav a').forEach(el => {
+                el.classList.remove('bg-discord-dark', 'text-white', 'font-medium');
+                el.classList.add('text-gray-300', 'hover:bg-discord-dark', 'hover:text-white');
+            });
+            
+            // Add active class to clicked link
+            this.classList.add('bg-discord-dark', 'text-white', 'font-medium');
+            this.classList.remove('text-gray-300', 'hover:bg-discord-dark', 'hover:text-white');
+            
+            // Scroll to section
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script> 

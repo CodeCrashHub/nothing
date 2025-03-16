@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio - Roshan Rawal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        discord: {
+                            primary: '#5865F2',
+                            dark: '#36393f',
+                            darker: '#2f3136',
+                            darkest: '#202225',
+                            light: '#40444b',
+                            green: '#3ba55d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-discord-dark text-gray-100 h-screen flex overflow-hidden">
+    <!-- Column 1: Server Sidebar (4.5% width) -->
+    <div class="bg-discord-darkest w-[4.5%] flex-shrink-0 flex flex-col items-center py-3 space-y-2">
+        <!-- Home Icon -->
+        <div class="w-12 h-12 rounded-full bg-discord-primary flex items-center justify-center text-white mb-2 server-icon tooltip" data-tooltip="Home">
+            <img src="images/rrlogo.png" alt="RR Logo" class="w-7 h-7">
+        </div>
+        
+        <!-- Server Line Separator -->
+        <div class="w-8 h-0.5 bg-gray-700 rounded-full"></div>
+        
+        <!-- Portfolio Section Icons -->
+        <div class="w-12 h-12 rounded-full bg-discord-dark flex items-center justify-center text-white hover:bg-blue-500 hover:rounded-xl transition-all duration-200 server-icon tooltip" data-tooltip="About Me">
+            <i class="fas fa-user text-lg"></i>
+        </div>
+        
+        <div class="w-12 h-12 rounded-full bg-discord-dark flex items-center justify-center text-white hover:bg-green-500 hover:rounded-xl transition-all duration-200 server-icon tooltip" data-tooltip="Projects">
+            <i class="fas fa-code text-lg"></i>
+        </div>
+        
+        <div class="w-12 h-12 rounded-full bg-discord-dark flex items-center justify-center text-white hover:bg-yellow-500 hover:rounded-xl transition-all duration-200 server-icon tooltip" data-tooltip="Skills">
+            <i class="fas fa-cogs text-lg"></i>
+        </div>
+        
+        <div class="w-12 h-12 rounded-full bg-discord-dark flex items-center justify-center text-white hover:bg-purple-500 hover:rounded-xl transition-all duration-200 server-icon tooltip" data-tooltip="Contact">
+            <i class="fas fa-envelope text-lg"></i>
+        </div>
+        
+        <!-- User Controls at Bottom -->
+        <div class="mt-auto">
+            <div class="w-12 h-12 rounded-full bg-discord-dark flex items-center justify-center text-white hover:bg-red-500 hover:rounded-xl transition-all duration-200 server-icon tooltip" data-tooltip="Settings">
+                <i class="fas fa-cog text-lg"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Column 2: Navigation Panel (17.58% width) -->
+    <div class="w-[18.93%] bg-discord-darker border-r border-gray-800 flex flex-col">
+        <!-- Banner image (5 inches fixed height) -->
+        <div class="w-full h-20 overflow-hidden">
+            <img src="images/banner.jpg" 
+                 alt="Profile banner" 
+                 class="w-full object-cover">
+        </div>
+        
+        <!-- Profile section -->
+        <div class="px-4 pb-4">
+            <!-- Profile photo -->
+            <div class="flex justify-center">
+                <img src="images/profile.jpg" 
+                     alt="Profile photo" 
+                     class="w-16 h-16 rounded-full profile-photo -mt-8 border-4 border-discord-darker">
+            </div>
+            
+            <!-- Name and status -->
+            <div class="text-center">
+                <h2 class="text-white text-lg font-bold mt-2">Roshan Rawal</h2>
+                <div class="flex items-center justify-center bg-discord-dark rounded-md px-2 py-1 mt-1 w-max mx-auto">
+                    <div class="w-2 h-2 rounded-full bg-green-500 mr-2"></div>
+                    <span class="text-xs text-gray-300">roshanrawal@gmail.com</span>
+                </div>
+            </div>
+            
+            <!-- Bio -->
+            <p class="text-gray-300 text-center mt-3 text-sm">
+                Full-stack developer passionate about creating modern web applications with clean, efficient code.
+            </p>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="px-4 mt-4 flex-grow">
+            <h3 class="text-gray-400 text-sm font-semibold mb-2 uppercase tracking-wide">Social Media</h3>
+            <div class="space-y-2">
+                <a href="https://www.tiktok.com/@roseanrawal?is_from_webapp=1&sender_device=pc" class="flex items-center px-2 py-2 text-sm rounded-md text-gray-300 hover:bg-discord-light hover:text-white">
+                    <i class="fab fa-tiktok w-5 h-5 mr-3"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100077412830700" class="flex items-center px-2 py-2 text-sm rounded-md text-gray-300 hover:bg-discord-light hover:text-white">
+                    <i class="fab fa-facebook w-5 h-5 mr-3"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="flex items-center px-2 py-2 text-sm rounded-md text-gray-300 hover:bg-discord-light hover:text-white">
+                    <i class="fab fa-linkedin w-5 h-5 mr-3"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/roshanrawa7" class="flex items-center px-2 py-2 text-sm rounded-md text-gray-300 hover:bg-discord-light hover:text-white">
+                    <i class="fab fa-instagram w-5 h-5 mr-3"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="flex items-center px-2 py-2 text-sm rounded-md text-gray-300 hover:bg-discord-light hover:text-white">
+                    <i class="fab fa-youtube w-5 h-5 mr-3"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- User profile at bottom -->
+        <div class="mt-auto p-2 bg-discord-darkest flex items-center">
+            <div class="relative">
+                <img src="images/profile.jpg" alt="User" class="w-8 h-8 rounded-full">
+                <div class="absolute bottom-0 right-1 w-3 h-3 rounded-full bg-green-500 border-2 border-discord-darkest cursor-pointer"></div>
+            </div>
+            <div class="ml-2">
+                <div class="text-white text-sm font-medium">Roshan</div>
+                <div class="text-xs text-gray-400">roshanrawal@gmail.com</div>
+            </div>
+            <div class="ml-auto flex space-x-2">
+                <button class="text-gray-400 hover:text-white">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="text-gray-400 hover:text-white">
+                    <i class="fas fa-headphones"></i>
+                </button>
+                <button class="text-gray-400 hover:text-white">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Column 3: Main Content Area (59.34% width) -->
+    <div class="w-[59.34%] flex flex-col">
+        <!-- Top Navigation -->
+        <div class="h-12 border-b border-gray-800 flex items-center px-4 bg-discord-dark">
+            <div class="flex space-x-6">
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="home">
+                    <i class="fas fa-home mr-2"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="about">
+                    <i class="fas fa-user mr-2"></i>
+                    <span>About Me</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="projects">
+                    <i class="fas fa-code mr-2"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="skills">
+                    <i class="fas fa-cogs mr-2"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="resume">
+                    <i class="fas fa-file-alt mr-2"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-white" data-page="contact">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Content - Dynamic Content Area -->
+        <div id="content-area" class="flex-1 overflow-y-auto">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+    
+    <!-- Column 4: Activity Panel (17.22% width) -->
+    <div class="w-[17.22%] bg-discord-darker border-l border-gray-800 flex flex-col">
+        <div class="p-4 border-b border-gray-800">
+            <h3 class="font-bold text-lg">Active Now</h3>
+        </div>
+        
+        <div class="p-4">
+            <div class="text-center py-8">
+                <h4 class="text-lg font-semibold text-white mb-2">It's quiet for now...</h4>
+                <p class="text-gray-400 text-sm px-4">
+                    When a friend starts an activity – like playing a game or hanging out on voice – we'll show it here!
+                </p>
+            </div>
+            
+            <div class="mt-6">
+                <h4 class="font-semibold mb-2 text-sm text-gray-400">SKILLS OVERVIEW</h4>
+                <div class="space-y-3">
+                    <div class="bg-discord-dark p-2 rounded-md">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-xs">HTML/CSS</span>
+                            <span class="text-xs">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-discord-dark p-2 rounded-md">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-xs">JavaScript</span>
+                            <span class="text-xs">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-yellow-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-discord-dark p-2 rounded-md">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-xs">Tailwind CSS</span>
+                            <span class="text-xs">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-cyan-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <h4 class="font-semibold mb-2 text-sm text-gray-400">RECENT ACTIVITY</h4>
+                <div class="bg-discord-dark p-3 rounded-md">
+                    <div class="text-sm mb-2">Updated portfolio</div>
+                    <div class="text-xs text-gray-400">2 hours ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
